@@ -33,14 +33,7 @@ const App = () => {
   return (
     <div>
       <NewExpense addExpenseHandler={addExpenseHandler}/>
-      {expenses.map((expense) => (
-        <Expenses 
-        title={expense.title}
-        amount={expense.amount} 
-        date={expense.date} 
-      / >
-      ))}
-
+        <Expenses item={expenses} />
     </div>
   );
 }
